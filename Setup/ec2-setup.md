@@ -1,6 +1,72 @@
 # EC2 Setup
 # EC2 Instance Setup
 
+# Steps to Create an EC2 Instance on AWS
+
+## 1. Login
+- Go to **AWS Management Console**
+- Sign in with your AWS account.
+
+---
+
+## 2. Open EC2 Dashboard
+- Navigate to: **Services → Compute → EC2**
+- Click **Launch Instance**
+
+---
+
+## 3. Configure Instance
+
+### Name
+Enter any instance name  
+Example: `MyServer`
+
+### AMI (Operating System)
+Choose an OS template:
+- Amazon Linux
+- Ubuntu
+- Windows
+
+### Instance Type
+Select hardware configuration  
+**Free tier:** `t2.micro` or `t3.micro`
+
+### Key Pair
+- Create or select key pair
+- Download `.pem` file (used for SSH login)
+
+### Network Settings
+Allow:
+- SSH (Port 22)
+- HTTP (Port 80)
+- HTTPS (Port 443)
+
+### Storage
+- Default: **8 GB**
+- Increase if needed
+
+---
+
+## 4. Launch Instance
+Click **Launch Instance**  
+Wait until **Instance State = Running**
+
+---
+
+## 5. Connect to Instance
+Select instance → Click **Connect**
+
+Connection options:
+- EC2 Instance Connect (browser)
+- SSH client (using key pair)
+
+---
+
+## ✅ Done!
+Your cloud server is now live 
+
+---
+
 ## Objective
 The objective of this step was to deploy a basic compute resource using Amazon EC2 to host a simple web application and understand core cloud infrastructure concepts.
 
