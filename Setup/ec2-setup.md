@@ -1,4 +1,3 @@
-# EC2 Setup
 # EC2 Instance Setup
 
 # Steps to Create an EC2 Instance on AWS
